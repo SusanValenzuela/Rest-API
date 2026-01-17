@@ -25,7 +25,7 @@ create table if not exists games (
     year int not null,
     `system` varchar(255) not null,
     `condition` varchar(255) not null,
-    ownerid int not null,
+    ownerId int not null,
     foreign key(ownerid) references users(id)
 );
 
